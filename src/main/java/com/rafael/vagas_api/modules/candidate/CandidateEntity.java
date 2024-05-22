@@ -11,16 +11,14 @@ import jakarta.validation.constraints.Pattern;
 import lombok.Data;
 
 import jakarta.validation.constraints.Email;
-import lombok.NonNull;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.validator.constraints.Length;
 
 @Data
-@Entity(name = "Candidate")
+@Entity(name = "candidate")
 public class CandidateEntity {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
+    @Id @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
     private String name;
     @Pattern(regexp = "^[^\\s]*$", message = "O campo [username] não deve conter espaços")
