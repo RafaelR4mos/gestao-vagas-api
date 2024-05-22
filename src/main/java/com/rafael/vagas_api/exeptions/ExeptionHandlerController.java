@@ -16,10 +16,6 @@ public class ExeptionHandlerController {
 
     private MessageSource messageSource;
 
-    public ExeptionHandlerController(MessageSource message) {
-        this.messageSource = message;
-    }
-
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<List<ErrorMessageDTO>> handleMethodArgumentNotValidException(MethodArgumentNotValidException e) {
         List<ErrorMessageDTO> dto = new ArrayList<>();
