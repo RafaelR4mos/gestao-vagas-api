@@ -1,4 +1,4 @@
-package com.rafael.vagas_api.modules.candidate;
+package com.rafael.vagas_api.modules.candidate.entities;
 
 import java.time.LocalDateTime;
 import java.util.UUID;

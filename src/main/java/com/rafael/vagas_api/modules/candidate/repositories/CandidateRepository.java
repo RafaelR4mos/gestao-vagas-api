@@ -1,5 +1,6 @@
-package com.rafael.vagas_api.modules.candidate;
+package com.rafael.vagas_api.modules.candidate.repositories;
 
+import com.rafael.vagas_api.modules.candidate.entities.CandidateEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

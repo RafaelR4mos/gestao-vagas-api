@@ -1,9 +1,7 @@
 package com.rafael.vagas_api.modules.candidate.controllers;
 
-import com.rafael.vagas_api.exeptions.UserFoundException;
-import com.rafael.vagas_api.modules.candidate.CandidateEntity;
+import com.rafael.vagas_api.modules.candidate.entities.CandidateEntity;
 
-import com.rafael.vagas_api.modules.candidate.CandidateRepository;
 import com.rafael.vagas_api.modules.candidate.services.CreateCandidateService;
 import jakarta.validation.Valid;
 
@@ -11,8 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/candidate")
