@@ -10,7 +10,7 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
 
 @Configuration
-public class SecurityConfig {w
+public class SecurityConfig {
 
     @Autowired
     private SecurityFilterCompany securityFilterCompany;
