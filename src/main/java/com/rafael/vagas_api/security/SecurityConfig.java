@@ -10,10 +10,10 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
 
 @Configuration
-public class SecurityConfig {
+public class SecurityConfig {w
 
     @Autowired
-    private SecurityFilter securityFilter;
+    private SecurityFilterCompany securityFilterCompany;
 
     @Bean
     SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
@@ -26,7 +26,7 @@ public class SecurityConfig {
                     auth.anyRequest().authenticated();
                 })
 
-                .addFilterBefore(securityFilter, BasicAuthenticationFilter.class)
+                .addFilterBefore(securityFilterCompany, BasicAuthenticationFilter.class)
         ;
         return http.build();
     }
